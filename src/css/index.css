@@ -55,6 +55,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 a.name {
@@ -77,6 +79,11 @@ a.name {
 
 .navbar-collapse {
     background-color: var(--pink);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 200;
 }
 
 .collapse.show .navbar-nav {
