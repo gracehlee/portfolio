@@ -1,0 +1,107 @@
+/* margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'Poetsen One';
+    src: url('https://fonts.gstatic.com/s/poetsenone/v12/FwZY7-Q-xVAi_l-6Ld6A4sijpFu_.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lilita One';
+    src: url('https://fonts.gstatic.com/s/lilitaone/v17/IurY6Y5j_oScZZow4VOxCZZMZirOZ35isg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* content */
+html, body {
+    height: 100vh;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--white);
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    --white: rgb(255, 249, 240);
+    --pink: rgb(215, 161, 170);
+}
+
+main {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+nav {
+    background-color: var(--pink);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+a.name {
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: var(--white);
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-right: 2rem;
+    font-family: 'Poetsen One';
+    font-size: 1.3rem !important;
+}
+
+.navbar-collapse {
+    background-color: var(--pink);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 200;
+}
+
+.collapse.show .navbar-nav {
+    background-color: var(--pink);
+    text-align: center;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: var(--white);
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    height: 0px; /* height of total scrollbar */
+    width: 0px; /* width of total scrollbar */
+    background: #ffc99c; /* background of scrollbar */
+    border: 0px solid #000; /* border around whole scrollbar */
+}

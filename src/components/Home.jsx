@@ -1,4 +1,4 @@
-function Home(props) {
+export default function Home() {
     return (
         <main>
             <div>
@@ -7,5 +7,3 @@ function Home(props) {
         </main>
     )
 }
-
-export default Home
