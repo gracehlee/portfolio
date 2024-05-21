@@ -52,6 +52,7 @@ main {
 nav {
     background-color: var(--pink);
     height: 5rem;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -66,6 +67,7 @@ a.name {
     color: var(--white);
     padding-bottom: 0.5rem;
     padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .nav-content {
@@ -96,6 +98,12 @@ a.name {
     display: block;
     text-align: center;
     width: 100%;
+}
+
+nav. {
+    margin-right: 0;
+    width: 100vw;
+    padding-right:
 }
 
 /* scrollbar */
