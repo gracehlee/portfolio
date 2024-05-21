@@ -5,6 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+if (!root) {
+  throw new Error('root element was not found!')
+}
+
 root.render(
   <React.StrictMode>
     <App />
