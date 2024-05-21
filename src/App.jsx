@@ -1,5 +1,7 @@
 import './App.css';
+import './css/index.css'
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
+import Nav from './components/Nav'
 import Home from './components/Home'
 
 function App() {
@@ -11,7 +13,12 @@ function App() {
           <Route>
             <Route
               path="/"
-              element={<Home />}
+              element={
+                <>
+                  <Nav />
+                  <Home />
+                </>
+              }
             />
           </Route>
         </Routes>
