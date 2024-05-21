@@ -1,26 +1,15 @@
-import './App.css';
-import './css/index.css'
-import { Route, Routes, BrowserRouter } from 'react-router-dom'
-import Nav from './components/Nav'
-import Home from './components/Home'
+import './css/index.css';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import Nav from './components/Nav';
+import Home from './components/Home';
 
 function App() {
   return (
     <BrowserRouter>
-      <div>
-        {/* Nav */}
+      <Nav />
+      <div id="content">
         <Routes>
-          <Route>
-            <Route
-              path="/"
-              element={
-                <>
-                  <Nav />
-                  <Home />
-                </>
-              }
-            />
-          </Route>
+          <Route path="/" element={<Home />} />
         </Routes>
         {/* Footer */}
       </div>
