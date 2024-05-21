@@ -1,6 +1,3 @@
-/* imports */
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
-
 /* margins */
 * {
     margin: 0;
@@ -12,8 +9,17 @@
 @font-face {
     font-family: 'Poetsen One';
     src: url('https://fonts.gstatic.com/s/poetsenone/v12/FwZY7-Q-xVAi_l-6Ld6A4sijpFu_.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lilita One';
+    src: url('https://fonts.gstatic.com/s/lilitaone/v17/IurY6Y5j_oScZZow4VOxCZZMZirOZ35isg.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 /* content */
@@ -33,17 +39,56 @@ html, body {
     flex-direction: column;
     min-height: 100vh;
     --white: rgb(255, 249, 240);
-    --pink: rgb(255, 213, 220);
+    --pink: rgb(215, 161, 170);
+}
+
+main {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 nav {
     background-color: var(--pink);
-    min-height: 10vh;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-p.name {
+a.name {
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: var(--white);
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-right: 2rem;
     font-family: 'Poetsen One';
-    font-size: 3rem;
+    font-size: 1.3rem !important;
+}
+
+.navbar-collapse {
+    background-color: var(--pink);
+}
+
+.collapse.show .navbar-nav {
+    background-color: var(--pink);
+    text-align: center;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: var(--white);
+    display: block;
+    text-align: center;
+    width: 100%;
 }
 
 /* scrollbar */
