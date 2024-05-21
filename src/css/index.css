@@ -13,8 +13,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    --white: white;
+    --pink: rgb(255, 213, 220);
 }
 
 nav {
-    background-color: red;
+    background-color: var(--pink);
+    min-height: 10vh;
 }
