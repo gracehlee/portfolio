@@ -1,9 +1,22 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+/* margins */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* fonts */
+@font-face {
+    font-family: 'Poetsen One';
+    src: url('https://fonts.gstatic.com/s/poetsenone/v12/FwZY7-Q-xVAi_l-6Ld6A4sijpFu_.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* content */
 html, body {
     height: 100vh;
     margin: 0;
@@ -28,6 +41,12 @@ nav {
     min-height: 10vh;
 }
 
+p.name {
+    font-family: 'Poetsen One';
+    font-size: 3rem;
+}
+
+/* scrollbar */
 ::-webkit-scrollbar {
     height: 0px; /* height of total scrollbar */
     width: 0px; /* width of total scrollbar */

@@ -3,6 +3,7 @@ export default function Nav() {
         <header>
             <nav>
                 <div>
+                    <p className='name'>grace lee</p>
                     <p>Hello Nav!</p>
                 </div>
             </nav>
