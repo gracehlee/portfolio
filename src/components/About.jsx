@@ -37,7 +37,7 @@ export default function About() {
                 <p>
                     Back in the day, I started tinkering with <span style={{color: 'lightblue'}}>custom CSS and HTML </span>
                     on my Tumblr pages, aiming to perfect the aesthetics of my art blog. Those were the days of custom cursors,
-                    emojis, and widgets - true hallmark of the early 2000s! 😂
+                    emojis, and widgets - true hallmark of the early 2000's! 😂
                     Little did I know, this was just the beginning of my journey into the vast world of
                     <span style={{color: 'lightblue'}}> web design and development.</span>
                 </p>

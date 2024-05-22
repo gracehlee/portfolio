@@ -29,11 +29,20 @@ html, body {
     --navy: rgb(53, 52, 56);
 }
 
+header {
+    padding-bottom: 5rem;
+}
+
 main {
-    padding-top: 5vh;
     background-color: var(--white);
     min-height: 100vh;
     font-family: 'Varela Round';
+}
+
+.darkmode {
+    background-color: rgb(28, 28, 28) !important;
+    color: var(--white) !important;
+    transition: all 0.2s ease-in-out;
 }
 
 /* Navbar */
@@ -50,10 +59,11 @@ nav {
     font-weight: bold;
 }
 
-h2.name {
+h1.name {
     font-family: 'Varela Round', sans-serif;
     font-size: 4rem;
     color: var(--navy);
+    font-weight: bolder;
 }
 
 h4 {
@@ -132,7 +142,7 @@ h4 {
     min-height: 25rem;
     object-fit: cover;
     border-radius: 25rem;
-    background-color: rgb(120, 132, 155);
+    background-color: rgb(190, 198, 211);
     box-shadow: 20px 20px 0px 5px rgb(244, 248, 255);
 }
 
@@ -269,8 +279,8 @@ footer {
     justify-content: center;
     text-align: center;
     padding: 1rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 
 footer h6 {
