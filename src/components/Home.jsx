@@ -10,10 +10,18 @@ export default function Home(props) {
         <>
             <main className={`${darkmode ? 'darkmode' : ''}`}>
                 <div>
-                    <Intro darkmode={darkmode}/>
-                    <About />
-                    <Projects darkmode={darkmode}/>
-                    <Contact />
+                    <section id="home">
+                        <Intro darkmode={darkmode}/>
+                    </section>
+                    <section id="about">
+                        <About />
+                    </section>
+                    <section id="projects">
+                        <Projects darkmode={darkmode}/>
+                    </section>
+                    <section id="contact">
+                        <Contact />
+                    </section>
                 </div>
             </main>
         </>

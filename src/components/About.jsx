@@ -50,7 +50,7 @@ export default function About() {
                 <p>
                     During my downtime, you'll often find me immersed in designing and crafting my own stickers to share
                     with the kids at my local church on Sundays. And when it's time to unwind, there's nothing quite like
-                    a good old-fashioned D&D session with friends. 
+                    a good old-fashioned D&D session with friends.
                 </p>
             </div>
             <div className="div2" style={{textAlign: 'center'}}>
