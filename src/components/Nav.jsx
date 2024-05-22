@@ -4,9 +4,8 @@ import '../css/index.css';
 
 export default function Nav() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: 'var(--pink)' }}>
+        <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
-                <a className="name" href="#">grace lee</a>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -19,18 +18,18 @@ export default function Nav() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse sticky-top" id="navbarNav">
-                    <ul className="navbar-nav ms-auto">
+                    <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link nav-content" href="#">about</a>
+                            <a className="nav-link nav-content" href="/">about</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link nav-content" href="#">projects</a>
+                            <a className="nav-link nav-content" href="/">projects</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link nav-content" href="#">contact</a>
+                            <a className="nav-link nav-content" href="/">contact</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link nav-content" href="#">resume</a>
+                            <a className="nav-link nav-content" href="/">resume</a>
                         </li>
                     </ul>
                 </div>
