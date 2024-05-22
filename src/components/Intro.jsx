@@ -6,6 +6,7 @@ import gmail from '../images/gmail.png'
 import linkedin2 from '../images/linkedin2.png'
 import gitlab2 from '../images/gitlab2.png'
 import gmail2 from '../images/gmail2.png'
+import bw from '../images/bw.png'
 
 export default function Intro(props) {
     const myEmail = process.env.REACT_APP_MY_EMAIL;
@@ -56,7 +57,14 @@ export default function Intro(props) {
                     <div><br /></div>
                 </div>
                 <div className="profile-image align-items-center position-relative">
-                    <img src={profile} alt="Profile" />
+                    <img
+                        src={darkmode ? bw : profile}
+                        style={{
+                            backgroundColor: `${darkmode ? 'black' : ''}`,
+                            boxShadow: '20px 20px 0px 5px'
+                        }}
+                        alt="Profile"
+                    />
                 </div>
             </div>
         </div>
