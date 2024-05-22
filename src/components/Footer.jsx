@@ -3,9 +3,9 @@ import gitlab from '../images/gitlab.png';
 import gmail from '../images/gmail.png';
 
 export default function Footer() {
+    const myEmail = process.env.REACT_APP_MY_EMAIL;
     const handleCopy = () => {
-        const my_email = 'ghlee.contactme@gmail.com';
-        navigator.clipboard.writeText(my_email);
+        navigator.clipboard.writeText(myEmail);
         window.alert('Email copied to clipboard!');
     };
 
