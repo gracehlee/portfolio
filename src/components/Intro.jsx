@@ -88,6 +88,7 @@ export default function Intro(props) {
                             alt="Profile"
                         />
                     </div>
+                    <div style={{width: '8rem'}}></div>
                 </div>
             </div>
         </div>
