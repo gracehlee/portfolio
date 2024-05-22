@@ -3,7 +3,6 @@ import '../css/index.css';
 import linkedin from '../images/linkedin.png'
 import gitlab from '../images/gitlab.png'
 import gmail from '../images/gmail.png'
-import { useState } from 'react'
 
 export default function Intro() {
     const handleCopy = () => {
@@ -17,7 +16,7 @@ export default function Intro() {
             <div className="d-flex align-items-center">
                 <div className="about-text align-items-center">
                     <h2 className="name">grace lee</h2>
-                    <h4 style={{color: 'navy'}}>FULL STACK ENGINEER</h4>
+                    <h4 style={{color: 'darkblue'}}>FULL - STACK ENGINEER</h4>
                     <div><br /></div>
                     <a
                         href="https://www.linkedin.com/in/haeungracelee/"
