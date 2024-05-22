@@ -39,7 +39,7 @@ export default function About() {
                     on my Tumblr pages, aiming to perfect the aesthetics of my art blog. Those were the days of custom cursors,
                     emojis, and widgets - true hallmark of the early 2000's! 😂
                     Little did I know, this was just the beginning of my journey into the vast world of
-                    <span style={{color: 'lightblue'}}> web design and development.</span>
+                    <span style={{color: 'lightblue'}}> web design and development. </span>
                 </p>
                 <p>
                     As a <span style={{color: 'pink'}}>detail-oriented</span> and
