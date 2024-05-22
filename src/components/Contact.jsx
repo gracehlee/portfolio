@@ -66,9 +66,10 @@ export default function Contact() {
                 backgroundAttachment: 'fixed',
             }}
         >
-            <h1 style={{fontWeight: 'bold'}}>Contact</h1>
-            <div><br /></div>
+
             <div className="offset-3 col-6">
+                <h1 style={{fontWeight: 'bold', textAlign: 'center'}}>Contact</h1>
+                <div><br /></div>
                 <br />
                 {userError && (
                     <div className="alert alert-danger">{userError}</div>
@@ -94,6 +95,7 @@ export default function Contact() {
                                 color: 'white',
                                 backgroundColor: 'transparent',
                             }}
+                            maxLength={50}
                         />
                         <label htmlFor="name">Name</label>
                     </div>
@@ -111,23 +113,25 @@ export default function Contact() {
                                 color: 'white',
                                 backgroundColor: 'transparent',
                             }}
+                            maxLength={50}
                         />
                         <label htmlFor="email">Email</label>
                     </div>
                     <div className="form-floating mb-3">
-                        <input
+                        <textarea
                             value={contactFormData.message}
                             onChange={handleInputChange}
                             placeholder="Message"
                             required
-                            type="text"
                             name="message"
                             id="message"
-                            className="form-control"
+                            className="form-control resizable"
                             style={{
                                 color: 'white',
                                 backgroundColor: 'transparent',
+                                minHeight: '6rem',
                             }}
+                            maxLength={1000}
                         />
                         <label htmlFor="message">Message</label>
                     </div>
