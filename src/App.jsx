@@ -20,7 +20,13 @@ function App() {
     <BrowserRouter>
       <nav className="navbar navbar-expand-lg sticky-top">
             <div className="container-fluid">
-                <button class="btn btn-dark rounded-pill" onClick={toggleDarkMode}>🔅</button>
+                <button
+                  class="btn btn-dark rounded-pill"
+                  style={{backgroundColor: `${darkmode ? 'grey' : ''}`}}
+                  onClick={toggleDarkMode}
+                >
+                  🔅
+                </button>
                 <button
                     className="navbar-toggler"
                     type="button"
