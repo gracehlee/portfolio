@@ -23,7 +23,7 @@ function App() {
           <div className="container-fluid">
               <button
                 class="btn btn-dark rounded-pill"
-                style={{backgroundColor: `${darkmode ? 'grey' : ''}`}}
+                style={{backgroundColor: `${darkmode ? 'grey' : ''}`, marginLeft: '1rem'}}
                 onClick={toggleDarkMode}
               > <span>  </span>
                 🔅
@@ -36,10 +36,11 @@ function App() {
                   aria-controls="navbarNav"
                   aria-expanded="false"
                   aria-label="Toggle navigation"
+                  style={{marginRight: '1rem'}}
               >
                   <span className="navbar-toggler-icon"></span>
               </button>
-              <div className="collapse navbar-collapse sticky-top" id="navbarNav">
+              <div className="collapse navbar-collapse sticky-top" id="navbarNav" style={{padding: '1rem'}}>
                   <ul className="navbar-nav">
                       <li className="nav-item">
                           <a className="nav-link nav-content" href="/">about</a>
