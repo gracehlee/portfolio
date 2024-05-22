@@ -19,13 +19,13 @@ function App() {
   return (
     <BrowserRouter>
       <header className={`${darkmode ? 'darkmode' : ''}`}>
-        <nav className="navbar navbar-expand-lg sticky-top">
+        <nav className="navbar navbar-expand-lg fixed-top">
           <div className="container-fluid">
               <button
                 class="btn btn-dark rounded-pill"
                 style={{backgroundColor: `${darkmode ? 'grey' : ''}`}}
                 onClick={toggleDarkMode}
-              >
+              > <span>  </span>
                 🔅
               </button>
               <button
