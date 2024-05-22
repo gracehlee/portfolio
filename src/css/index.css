@@ -257,6 +257,10 @@ h4 {
     background-color: var(--navy);
 }
 
+.resizable {
+    resize: vertical;
+}
+
 /* Footer */
 footer {
     display: flex;
