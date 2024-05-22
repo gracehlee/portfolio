@@ -4,8 +4,9 @@ import '../css/index.css';
 
 export default function Nav() {
     return (
-        <nav className="navbar navbar-expand-lg">
+        <nav className="navbar navbar-expand-lg sticky-top">
             <div className="container-fluid">
+                <button class="btn btn-dark rounded-pill">🔅</button>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -33,6 +34,7 @@ export default function Nav() {
                         </li>
                     </ul>
                 </div>
+
             </div>
         </nav>
     );

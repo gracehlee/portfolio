@@ -30,7 +30,7 @@ html, body {
 }
 
 main {
-    padding-top: 10vh;
+    padding-top: 5vh;
     background-color: var(--white);
     min-height: 100vh;
     font-family: 'Varela Round';
@@ -60,6 +60,8 @@ h4 {
     font-weight: bold !important;
 }
 
+/* Nav Links */
+
 .nav-content {
     display: flex;
     align-items: center;
@@ -88,7 +90,15 @@ h4 {
     color: var(--white);
     display: block;
     text-align: center;
-    width: 100%;
+    width: 100% !important;
+}
+
+.navbar-toggler {
+    border-color: white !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="white" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E') !important;
 }
 
 /* Intro Section */
@@ -149,14 +159,125 @@ h4 {
     text-align: right;
 }
 
+/* Main container styles */
 .about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100vw;
     background-color: rgb(52, 47, 62);
     color: white;
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding: 7rem 5rem;
+    font-size: 1.2rem;
+    cursor: url('../images/cursor.png'), auto;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+}
+
+.alt-text {
+    visibility: hidden;
+    width: 100px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the image */
+    left: 50%;
+    margin-left: -50px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.alt-text::after {
+    content: '';
+    position: absolute;
+    top: 100%; /* Arrow pointing down */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.image-container:hover .alt-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Left section styles */
+.div1 {
+    flex: 3;
+    padding: 1rem;
+}
+
+/* Right section styles */
+.div2 {
+    flex: 1;
+    padding: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 800px) {
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div1,
+    .div2 {
+        flex: unset;
+        width: 100%;
+        padding: 1rem 0;
+    }
+}
+
+/* Projects */
+.projects {
     padding-left: 5rem;
     padding-right: 5rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    color: var(--navy);
+}
+
+/* Contact Form */
+.contact {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    color: white;
+    background-color: var(--navy);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+footer h6 {
+    margin-bottom: 1rem;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1rem;
 }
 
 /* scrollbar */
