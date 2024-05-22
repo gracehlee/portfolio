@@ -191,7 +191,6 @@ h4 {
     color: white;
     padding: 7rem 5rem;
     font-size: 1.2rem;
-    cursor: url('../images/cursor.png'), auto;
 }
 
 .image-container {
@@ -243,6 +242,7 @@ h4 {
 .div2 {
     flex: 1;
     padding: 1rem;
+    cursor: url('../images/cursor.png'), auto;
 }
 
 /* Responsive design */
