@@ -8,12 +8,14 @@ function App() {
   return (
     <BrowserRouter>
       <Nav />
-      <div id="content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-        {/* Footer */}
-      </div>
+      <main>
+        <div id="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+          {/* Footer */}
+        </div>
+      </main>
     </BrowserRouter>
   );
 }

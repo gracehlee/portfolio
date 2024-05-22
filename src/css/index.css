@@ -1,22 +1,7 @@
-/* margins */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* fonts */
 @font-face {
-    font-family: 'Poetsen One';
-    src: url('https://fonts.gstatic.com/s/poetsenone/v12/FwZY7-Q-xVAi_l-6Ld6A4sijpFu_.ttf') format('truetype');
-    font-weight: lighter;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Lilita One';
-    src: url('https://fonts.gstatic.com/s/lilitaone/v17/IurY6Y5j_oScZZow4VOxCZZMZirOZ35isg.woff2') format('woff2');
+    font-family: 'Varela Round';
+    src: url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -32,25 +17,28 @@ html, body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--white);
+    font-family: 'Varela Round';
 }
 
 #root {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    --white: rgb(255, 249, 240);
-    --pink: rgb(215, 161, 170);
+    --white: #ededed;
+    --navy: rgb(53, 52, 56);
 }
 
 main {
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding-top: 5vh;
+    padding-top: 10vh;
     padding-bottom: 5vh;
+    background-color: var(--white);
+    min-height: 100vh;
+    font-family: 'Varela Round';
 }
 
+/* Navbar */
 nav {
-    background-color: var(--pink);
+    background-color: var(--navy);
     height: 5rem;
     width: 100%;
     display: flex;
@@ -58,16 +46,18 @@ nav {
     justify-content: space-between;
     margin-left: 0;
     margin-right: 0;
+    font-family: 'Varela Round';
+    font-weight: bold;
 }
 
-a.name {
-    font-family: 'Poetsen One', sans-serif;
-    font-size: 2.5rem;
-    text-decoration: none;
-    color: var(--white);
-    padding-bottom: 0.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+h2.name {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 4rem;
+    color: var(--navy);
+}
+
+h4 {
+    font-weight: bold !important;
 }
 
 .nav-content {
@@ -75,12 +65,13 @@ a.name {
     align-items: center;
     gap: 50px;
     margin-right: 2rem;
-    font-family: 'Poetsen One';
+    font-family: 'Varela Round';
     font-size: 1.3rem !important;
+    font-weight: bolder;
 }
 
 .navbar-collapse {
-    background-color: var(--pink);
+    background-color: var(--navy);
     position: absolute;
     top: 100%;
     left: 0;
@@ -89,7 +80,7 @@ a.name {
 }
 
 .collapse.show .navbar-nav {
-    background-color: var(--pink);
+    background-color: var(--navy);
     text-align: center;
 }
 
@@ -100,10 +91,72 @@ a.name {
     width: 100%;
 }
 
-nav. {
-    margin-right: 0;
+/* Intro Section */
+.c-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 7rem;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 7rem;
+}
+
+.profile-image {
+    flex: 1;
+}
+
+.profile-image img {
+    max-width: 25rem;
+    min-height: 25rem;
+    object-fit: cover;
+    border-radius: 25rem;
+    background-color: rgb(120, 132, 155);
+    box-shadow: 20px 20px 0px 5px rgb(244, 248, 255);
+}
+
+@media (max-width: 800px) {
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+        transition: smooth;
+    }
+
+    .about-text,
+    .profile-image {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .profile-image img {
+        max-width: 80%;
+        margin-bottom: 2rem;
+    }
+}
+
+.center {
+    text-align: right;
+}
+
+.about-me {
     width: 100vw;
-    padding-right:
+    background-color: rgb(52, 47, 62);
+    color: white;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 /* scrollbar */
