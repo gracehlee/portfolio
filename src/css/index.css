@@ -30,7 +30,7 @@ html, body {
 }
 
 header {
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
     background-color: var(--white);
     transition: all 0.2s ease-in-out;
 }
