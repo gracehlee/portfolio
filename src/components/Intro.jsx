@@ -3,8 +3,15 @@ import '../css/index.css';
 import linkedin from '../images/linkedin.png'
 import gitlab from '../images/gitlab.png'
 import gmail from '../images/gmail.png'
+import { useState } from 'react'
 
 export default function Intro() {
+    const handleCopy = () => {
+        const my_email = 'ghlee.contactme@gmail.com'
+        navigator.clipboard.writeText(my_email)
+        window.alert('Email copied to clipboard!')
+    }
+
     return (
         <div className="c-row">
             <div className="d-flex align-items-center">
@@ -12,9 +19,21 @@ export default function Intro() {
                     <h2 className="name">grace lee</h2>
                     <h4 style={{color: 'navy'}}>FULL STACK ENGINEER</h4>
                     <div><br /></div>
-                    <img src={linkedin} alt="linkedin" width='40px'style={{paddingRight: '10px'}}/>
-                    <img src={gitlab} alt="linkedin" width='40px' style={{paddingRight: '10px'}}/>
-                    <img src={gmail} alt="linkedin" width='45px'style={{paddingRight: '10px'}}/>
+                    <a
+                        href="https://www.linkedin.com/in/haeungracelee/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <img src={linkedin} alt="linkedin" width='40px'style={{paddingRight: '10px', cursor: 'pointer'}}/>
+                    </a>
+                    <a
+                        href="https://gitlab.com/gracehlee"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <img src={gitlab} alt="gitlab" width='40px' style={{paddingRight: '10px', cursor: 'pointer'}}/>
+                    </a>
+                    <img src={gmail} alt="gmail" width='45px'style={{paddingRight: '10px', cursor: 'pointer'}} onClick={handleCopy}/>
                     <div><br /></div>
                 </div>
                 <div className="profile-image align-items-center">
