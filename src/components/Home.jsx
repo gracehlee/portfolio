@@ -8,7 +8,6 @@ export default function Home(props) {
 
     return (
         <>
-            <header className={`${darkmode ? 'darkmode' : ''}`}></header>
             <main className={`${darkmode ? 'darkmode' : ''}`}>
                 <div>
                     <Intro darkmode={darkmode}/>

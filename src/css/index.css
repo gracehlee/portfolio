@@ -31,6 +31,7 @@ html, body {
 
 header {
     padding-bottom: 5rem;
+    background-color: var(--white);
     transition: all 0.2s ease-in-out;
 }
 
