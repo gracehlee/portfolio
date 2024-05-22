@@ -146,6 +146,7 @@ h4 {
     border-radius: 25rem;
     background-color: rgb(190, 198, 211);
     box-shadow: 20px 20px 0px 5px rgb(244, 248, 255);
+    transition: all 0.2s ease-in-out;
 }
 
 @media (max-width: 800px) {
@@ -200,7 +201,7 @@ h4 {
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    bottom: 125%; /* Position above the image */
+    bottom: 125%;
     left: 50%;
     margin-left: -50px;
     opacity: 0;
@@ -210,7 +211,7 @@ h4 {
 .alt-text::after {
     content: '';
     position: absolute;
-    top: 100%; /* Arrow pointing down */
+    top: 100%;
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
