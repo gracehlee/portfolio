@@ -31,12 +31,14 @@ html, body {
 
 header {
     padding-bottom: 5rem;
+    transition: all 0.2s ease-in-out;
 }
 
 main {
     background-color: var(--white);
     min-height: 100vh;
     font-family: 'Varela Round';
+    transition: all 0.2s ease-in-out;
 }
 
 .darkmode {
@@ -281,6 +283,7 @@ footer {
     padding: 1rem;
     padding-bottom: 2rem;
     padding-top: 2rem;
+    transition: all 0.2s ease-in-out;
 }
 
 footer h6 {
