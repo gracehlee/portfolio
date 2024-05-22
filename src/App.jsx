@@ -43,13 +43,13 @@ function App() {
               <div className="collapse navbar-collapse sticky-top" id="navbarNav" style={{padding: '1rem'}}>
                   <ul className="navbar-nav">
                       <li className="nav-item">
-                          <a className="nav-link nav-content" href="/">about</a>
+                          <a className="nav-link nav-content" href="/">About</a>
                       </li>
                       <li className="nav-item">
-                          <a className="nav-link nav-content" href="/">projects</a>
+                          <a className="nav-link nav-content" href="/">Projects</a>
                       </li>
                       <li className="nav-item">
-                          <a className="nav-link nav-content" href="/">contact</a>
+                          <a className="nav-link nav-content" href="/">Contact</a>
                       </li>
                       <li className="nav-item">
                           <a
@@ -59,7 +59,7 @@ function App() {
                             target="_blank"
                           >
                             {" "}
-                            resume
+                            Resume
                           </a>
                       </li>
                   </ul>
