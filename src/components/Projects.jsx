@@ -3,7 +3,9 @@ export default function Projects(props) {
 
     return (
         <div className="projects">
-            <h1 style={{ fontWeight: 'bold', color: darkmode ? 'white' : '' }}>My Projects</h1>
+            <h1 style={{ fontWeight: 'bold', color: darkmode ? 'white' : '' }}>
+                My Projects
+            </h1>
         </div>
     );
 }

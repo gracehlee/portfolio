@@ -90,6 +90,12 @@ h4 {
     font-weight: bolder;
 }
 
+.nav-content:hover {
+    color: rgb(202, 202, 202) !important;
+    transform: scale(1.01);
+    transition: all 0.2s ease-in-out;
+}
+
 .navbar-collapse {
     background-color: var(--navy);
     position: absolute;

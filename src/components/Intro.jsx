@@ -31,8 +31,12 @@ export default function Intro(props) {
                 <div className="d-flex align-items-center justify-items-center">
                     <div style={{width: '8rem'}}></div>
                     <div className="about-text align-items-center">
-                        <h1 className="name" style={{ color: darkmode ? 'white' : '' }}>Grace Lee</h1>
-                        <h4 style={{ color: darkmode ? 'lightblue' : 'darkblue' }}>FULL - STACK ENGINEER</h4>
+                        <h1 className="name" style={{ color: darkmode ? 'white' : '' }}>
+                            Grace Lee
+                        </h1>
+                        <h4 style={{ color: darkmode ? 'lightblue' : 'gray' }}>
+                            FULL - STACK ENGINEER
+                        </h4>
                         <div><br /></div>
                         <a
                             href="https://www.linkedin.com/in/haeungracelee/"
