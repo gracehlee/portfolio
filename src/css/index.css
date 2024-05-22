@@ -18,6 +18,7 @@ html, body {
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--white);
     font-family: 'Varela Round';
+    min-height: 100vh;
 }
 
 #root {
@@ -30,7 +31,6 @@ html, body {
 
 main {
     padding-top: 10vh;
-    padding-bottom: 5vh;
     background-color: var(--white);
     min-height: 100vh;
     font-family: 'Varela Round';
