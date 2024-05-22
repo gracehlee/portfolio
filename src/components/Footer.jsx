@@ -21,33 +21,37 @@ export default function Footer(props) {
                     href="https://www.linkedin.com/in/haeungracelee/"
                     target="_blank"
                     rel="noreferrer"
+                    className="expand"
                 >
                     <img
-                            src={darkmode ? linkedin2 : linkedin}
-                            alt="linkedin"
-                            width='40px'
-                            style={{paddingRight: '10px', cursor: 'pointer'}}
+                        src={darkmode ? linkedin2 : linkedin}
+                        alt="linkedin"
+                        width='40px'
+                        style={{paddingRight: '10px', cursor: 'pointer'}}
                     />
                 </a>
                 <a
                     href="https://gitlab.com/gracehlee"
                     target="_blank"
                     rel="noreferrer"
+                    className="expand"
                 >
                     <img
-                            src={darkmode ? gitlab2 : gitlab}
-                            alt="gitlab"
-                            width='40px'
-                            style={{paddingRight: '10px', cursor: 'pointer'}}
+                        src={darkmode ? gitlab2 : gitlab}
+                        alt="gitlab"
+                        width='40px'
+                        style={{paddingRight: '10px', cursor: 'pointer'}}
                     />
                 </a>
-                <img
+                <div className="expand">
+                    <img
                         src={darkmode ? gmail2 : gmail}
                         alt="gmail"
                         width='45px'
                         style={{paddingRight: '10px', cursor: 'pointer'}}
                         onClick={handleCopy}
-                />
+                    />
+                </div>
             </div>
         </footer>
     );

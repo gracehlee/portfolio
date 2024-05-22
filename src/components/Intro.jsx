@@ -27,33 +27,40 @@ export default function Intro(props) {
                         href="https://www.linkedin.com/in/haeungracelee/"
                         target="_blank"
                         rel="noreferrer"
+                        className="expand"
                     >
                         <img
                             src={darkmode ? linkedin2 : linkedin}
                             alt="linkedin"
                             width='40px'
                             style={{paddingRight: '10px', cursor: 'pointer'}}
+                            className="expand"
                         />
                     </a>
                     <a
                         href="https://gitlab.com/gracehlee"
                         target="_blank"
                         rel="noreferrer"
+                        className="expand"
                     >
                         <img
                             src={darkmode ? gitlab2 : gitlab}
                             alt="gitlab"
                             width='40px'
                             style={{paddingRight: '10px', cursor: 'pointer'}}
+                            className="expand"
                         />
                     </a>
-                    <img
-                        src={darkmode ? gmail2 : gmail}
-                        alt="gmail"
-                        width='45px'
-                        style={{paddingRight: '10px', cursor: 'pointer'}}
-                        onClick={handleCopy}
-                    />
+                    <span className="expand">
+                        <img
+                            src={darkmode ? gmail2 : gmail}
+                            alt="gmail"
+                            width='45px'
+                            style={{paddingRight: '10px', cursor: 'pointer'}}
+                            onClick={handleCopy}
+                            className="expand"
+                        />
+                    </span>
                     <div><br /></div>
                 </div>
                 <div className="profile-image align-items-center position-relative">

@@ -307,6 +307,14 @@ footer h6 {
     margin-top: 1rem;
 }
 
+.expand img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.expand img:hover {
+    transform: scale(1.03);
+}
+
 /* scrollbar */
 ::-webkit-scrollbar {
     height: 0px; /* height of total scrollbar */
