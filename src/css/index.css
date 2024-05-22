@@ -154,7 +154,7 @@ h4 {
     object-fit: cover;
     border-radius: 0.5rem;
     background-color: rgb(190, 198, 211);
-    box-shadow: 20px 20px 0px 5px rgb(244, 248, 255);
+    box-shadow: 10px 10px 0px 2px rgb(244, 248, 255);
     transition: all 0.2s ease-in-out;
 }
 

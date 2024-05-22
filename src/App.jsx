@@ -18,7 +18,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <header className={`${darkmode ? 'darkmode' : ''}`}>
+      <header style={{backgroundColor: `${darkmode ? 'black' : ''}`}}>
         <nav className="navbar navbar-expand-lg fixed-top">
           <div className="container-fluid">
               <button
@@ -52,7 +52,15 @@ function App() {
                           <a className="nav-link nav-content" href="/">contact</a>
                       </li>
                       <li className="nav-item">
-                          <a className="nav-link nav-content" href="/">resume</a>
+                          <a
+                            className="nav-link nav-content"
+                            href="./resume/leegrace_resume.pdf"
+                            role="button"
+                            target="_blank"
+                          >
+                            {" "}
+                            resume
+                          </a>
                       </li>
                   </ul>
               </div>
