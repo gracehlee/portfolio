@@ -15,6 +15,7 @@ export default function Footer(props) {
 
     return (
         <footer className={`${darkmode ? 'darkmode' : ''}`}>
+            <div><br /></div>
             <h6>Design and Code © Grace Lee 2024</h6>
             <div className="footer-icons">
                 <a
@@ -53,6 +54,7 @@ export default function Footer(props) {
                     />
                 </div>
             </div>
+            <div><br /></div>
         </footer>
     );
 }

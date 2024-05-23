@@ -82,7 +82,7 @@ export default function Intro(props) {
                         <img
                             src={darkmode ? bw : profile}
                             style={{
-                                backgroundColor: `${darkmode ? 'black' : ''}`,
+                                backgroundColor: `${darkmode ? '#111111' : ''}`,
                                 boxShadow: '20px 20px 0px 5px'
                             }}
                             alt="Profile"
