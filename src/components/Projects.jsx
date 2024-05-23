@@ -33,15 +33,14 @@ export default function Projects(props) {
                     />
                 </div>
                 <div className="card-body">
-                    <div className="row mb-3">
-                        <div className="col text-start">
-                            <a href={liveLink} className="btn" style={buttonStyle}>Live Application</a>
-                        </div>
-                        <div className="col text-end">
-                            <a href={codeLink} className="btn" style={buttonStyle}>Code Repository</a>
+                    <div className="d-flex justify-content-between mb-3 align-items-center">
+                        <h5 className="card-title">{title}</h5>
+                        <div>
+                            <a href={liveLink} className="btn btn-primary" style={buttonStyle}>🚀</a>
+                            <span> </span>
+                            <a href={codeLink} className="btn btn-primary" style={buttonStyle}>💻</a>
                         </div>
                     </div>
-                    <h5 className="card-title">{title}</h5>
                     <p className="card-text">{description}</p>
                     <div>
                         {tags.map(tag => (
