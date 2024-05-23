@@ -35,21 +35,27 @@ export default function About() {
                 <p>Hello world! I'm <span style={{color: 'pink'}}>Grace</span>,
                 a passionate <span style={{color: 'lightblue'}}>full-stack software engineer.</span></p>
                 <p>
-                    Back in the day, I started tinkering with <span style={{color: 'lightblue'}}>custom CSS and HTML </span>
-                    on my Tumblr pages, aiming to perfect the aesthetics of my art blog. Those were the days of custom cursors,
+                    Back in the day, I started tinkering with
+                    <span style={{color: 'lightblue'}}>custom CSS and HTML </span>
+                    on my Tumblr pages, aiming to perfect the aesthetics of my art blog.
+                    Those were the days of custom cursors,
                     emojis, and widgets - true hallmark of the early 2000's! 😂
                     Little did I know, this was just the beginning of my journey into the vast world of
                     <span style={{color: 'lightblue'}}> web design and development.</span>
                 </p>
                 <p>
                     As a <span style={{color: 'pink'}}>detail-oriented</span> and
-                    <span style={{color: 'pink'}}> enthusiastic</span> thinker, I thrive on learning new concepts,
-                    engaging in critical analysis, and solving complex problems. Each project presents its own set of
-                    challenges, but I find immense satisfaction in overcoming them through perseverance and thorough research.
+                    <span style={{color: 'pink'}}> enthusiastic</span> thinker,
+                    I thrive on learning new concepts,
+                    engaging in critical analysis, and solving complex problems.
+                    Each project presents its own set of
+                    challenges, but I find immense satisfaction in overcoming them
+                    through perseverance and thorough research.
                 </p>
                 <p>
-                    During my downtime, you'll often find me immersed in designing and crafting my own stickers to share
-                    with the kids at my local church on Sundays. And when it's time to unwind, there's nothing quite like
+                    During my downtime, you'll often find me immersed in designing and crafting
+                    my own stickers to share with the kids at my local church on Sundays.
+                    And when it's time to unwind, there's nothing quite like
                     a good old-fashioned D&D session with friends.
                 </p>
             </div>

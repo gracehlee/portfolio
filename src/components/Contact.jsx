@@ -66,9 +66,12 @@ export default function Contact() {
                 backgroundAttachment: 'fixed',
             }}
         >
-
             <div className="offset-3 col-6">
                 <h1 style={{fontWeight: 'bold', textAlign: 'center'}}>Contact</h1>
+                <div><br /></div>
+                <p style={{fontWeight: 'bold', textAlign: 'center'}}>
+                    I look forward to hearing from you!
+                </p>
                 <div><br /></div>
                 <br />
                 {userError && (
