@@ -1,5 +1,3 @@
-import YouTube from 'react-youtube'
-
 export default function Projects(props) {
     const darkmode = props.darkmode;
 
@@ -14,6 +12,14 @@ export default function Projects(props) {
             fontSize: '0.8rem',
         };
 
+        const mediaStyle = {
+            objectFit: 'fit',
+            aspectRatio: '1.5 / 1',
+            borderRadius: '0',
+            width: '100%',
+
+        }
+
         return (
             <div
                 className="card mb-4"
@@ -21,15 +27,18 @@ export default function Projects(props) {
                     border: darkmode ? '1px solid white' : '1px solid',
                     backgroundColor: darkmode ? '#111000' : 'white',
                     color: darkmode ? 'white' : 'black',
-                    objectFit: 'fit',
-                    aspectRatio: '1.5 / 1',
-                    borderRadius: '0',
-                    width: '100%',
+                    borderRadius: '2px',
                 }}
             >
                 <div style={{ margin: '10px' }}>
-                        <YouTube videoId={video} opts={{ width: '100%', height: 'auto' }} />
-                    </div>
+                    <iframe
+                        style={mediaStyle}
+                        src={`https://www.youtube.com/embed/${video}`}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
+                </div>
                 <div className="card-body">
                     <div className="d-flex justify-content-between mb-3 align-items-center">
                         <h5 className="card-title">{title}</h5>
@@ -52,15 +61,15 @@ export default function Projects(props) {
 
     const topThree = [
         {
-            video: '',
+            video: 'AvjIVyriSso',
             liveLink: 'test',
             codeLink: 'https://gitlab.com/gracehlee/portfolio',
             title: 'Portfolio Site',
             description: 'A portfolio website application showcasing my recent and significant projects. Code was built using the React.js framework, using HTML, CSS, and Bootstrap to set up the main front-end graphical user interface. Navigation will snap to the desired section using DOM manipulation. Contact form with email capabilities was built using third-party API, EmailJS. Site was deployed through Heroku.',
-            tags: ['React', 'Bootstrap', 'CSS'],
+            tags: ['React', 'Bootstrap', 'CSS', 'EmailJS', 'Heroku'],
         },
         {
-            video: '',
+            video: 'IxjdZSEP9zI',
             liveLink: 'test',
             codeLink: 'https://gitlab.com/gracehlee/pawsitive-vibes',
             title: 'Pawsitive Vibes',
@@ -68,7 +77,7 @@ export default function Projects(props) {
             tags: ['React', 'RestAPIs', 'ViteJS', 'FastAPI', 'Postgresql', 'Bootstrap', 'CSS', 'HTML', 'Docker', 'JavaScript']
         },
         {
-            video: '',
+            video: 'TkOrpoaPzjs',
             liveLink: 'test',
             codeLink: 'https://gitlab.com/gracehlee/project-beta',
             title: 'CarCar',
@@ -79,11 +88,11 @@ export default function Projects(props) {
 
     const myProjects = [
         {
-            video: '',
+            video: 'PFLjDga1Egw',
             liveLink: 'test',
-            codeLink: 'https://gitlab.com/gracehlee',
-            title: 'Test Project',
-            description: 'Test test test. This is where my description goes. As a detail-oriented and enthusiastic thinker, I thrive on learning new concepts, engaging in critical analysis, and solving complex problems. Each project presents its own set of challenges, but I find immense satisfaction in overcoming them through perseverance and thorough research.',
+            codeLink: 'https://gitlab.com/gracehlee/fearless-frontend',
+            title: 'Conference GO',
+            description: 'A full-stack web application that allows users to keep track of conferences, events, and attendees. Consists of a dynamic front-end interface with React, JavaScript, and Bootstrap design elements, back-end infrastructure using Django and Python, ensuring robustness and scalability, and third-party APIs with Pexels and Weather updates.',
             tags: ['React', 'Bootstrap', 'CSS']
         },
         {
@@ -114,6 +123,7 @@ export default function Projects(props) {
             <h3 className="center" style={{ fontWeight: 'bold', color: darkmode ? 'white' : '' }}>
                 Top 3
             </h3>
+            <br />
             <div className="container">
                 <div className="row">
                     {topThree.map((project, index) => (
@@ -123,9 +133,12 @@ export default function Projects(props) {
                     ))}
                 </div>
             </div>
+            <br />
+            <br />
             <h3 className="center" style={{ fontWeight: 'bold', color: darkmode ? 'white' : '' }}>
                 Other Projects
             </h3>
+            <br />
             <div className="container">
                 <div className="row">
                     {myProjects.map((project, index) => (
