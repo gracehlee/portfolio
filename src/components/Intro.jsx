@@ -7,6 +7,8 @@ import gmail from '../images/gmail.png'
 import linkedin2 from '../images/linkedin2.png'
 import gitlab2 from '../images/gitlab2.png'
 import gmail2 from '../images/gmail2.png'
+import github from '../images/github.png'
+import github2 from '../images/github2.png'
 import lattice from '../images/lattice.gif'
 
 export default function Intro(props) {
@@ -47,6 +49,20 @@ export default function Intro(props) {
                             <img
                                 src={darkmode ? linkedin2 : linkedin}
                                 alt="linkedin"
+                                width='40px'
+                                style={{paddingRight: '10px', cursor: 'pointer'}}
+                                className="expand"
+                            />
+                        </a>
+                        <a
+                            href="https://github.com/gracehlee"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="expand"
+                        >
+                            <img
+                                src={darkmode ? github2 : github}
+                                alt="github"
                                 width='40px'
                                 style={{paddingRight: '10px', cursor: 'pointer'}}
                                 className="expand"
