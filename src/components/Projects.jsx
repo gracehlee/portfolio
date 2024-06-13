@@ -92,8 +92,8 @@ export default function Projects(props) {
             liveLink: 'test',
             codeLink: 'https://gitlab.com/gracehlee/fearless-frontend',
             title: 'Conference GO',
-            description: 'A full-stack web application that allows users to keep track of conferences, events, and attendees. Consists of a dynamic front-end interface with React, JavaScript, and Bootstrap design elements, back-end infrastructure using Django and Python, ensuring robustness and scalability, and third-party APIs with Pexels and Weather updates.',
-            tags: ['React', 'Bootstrap', 'CSS']
+            description: 'A full-stack web application that allows users to keep track of conferences, events, and attendees: dynamic front-end with React, JavaScript, and Bootstrap, back-end infrastructure using Django and Python, ensuring robustness and scalability, and third-party APIs with Pexels and Weather updates.',
+            tags: ['React', 'JavaScript', 'Django', 'Python', 'JSX', 'Bootstrap', 'CSS', 'HTML', 'REST API']
         },
         {
             video: 'i6nX5Bb1AIU',
