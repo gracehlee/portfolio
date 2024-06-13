@@ -104,12 +104,12 @@ export default function Projects(props) {
             tags: ['Python', 'Django', 'HTML', 'CSS', 'SQLite3', 'PowerShell']
         },
         {
-            video: '',
+            video: 'cSZKaBTFBj4',
             liveLink: 'test',
-            codeLink: 'https://gitlab.com/gracehlee',
-            title: 'Test Project',
-            description: 'Test test test. This is where my description goes. As a detail-oriented and enthusiastic thinker, I thrive on learning new concepts, engaging in critical analysis, and solving complex problems. Each project presents its own set of challenges, but I find immense satisfaction in overcoming them through perseverance and thorough research.',
-            tags: ['React', 'Bootstrap', 'CSS']
+            codeLink: 'https://gitlab.com/gracehlee/cute-cats',
+            title: 'Cute Cats',
+            description: 'An early Django-centric project of a 2000`s aesthetic website featuring popular meme cats. Users are able to log in, submit a form to add a new cat, and click on individual cats to view or edit information. Instances of cats are managed by SQLite3 database. Frontend business logic requires login to view locked content.',
+            tags: ['Python', 'Django', 'CSS', 'HTML', 'SQLite3', 'Powershell']
         },
     ];
 
