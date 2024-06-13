@@ -1,4 +1,4 @@
-import code from '../images/code.png';
+import code from '../images/code.png'
 import python from '../images/python.png'
 import js from '../images/js.png'
 import sql from '../images/sql.png'
@@ -36,7 +36,7 @@ export default function About() {
                 a passionate <span style={{color: 'lightblue'}}>full-stack software engineer.</span></p>
                 <p>
                     Back in the day, I started tinkering with
-                    <span style={{color: 'lightblue'}}>custom CSS and HTML </span>
+                    <span style={{color: 'lightblue'}}> custom CSS and HTML </span>
                     on my Tumblr pages, aiming to perfect the aesthetics of my art blog.
                     Those were the days of custom cursors,
                     emojis, and widgets - true hallmark of the early 2000's! 😂
@@ -55,7 +55,7 @@ export default function About() {
                 <p>
                     During my downtime, you'll often find me immersed in designing and crafting
                     my own stickers to share with the kids at my local church on Sundays.
-                    And when it's time to unwind, there's nothing quite like
+                    And when it's time to unwind, nothing beats
                     a good old-fashioned D&D session with friends.
                 </p>
             </div>
