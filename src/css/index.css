@@ -1,7 +1,7 @@
 /* fonts */
 @font-face {
-    font-family: 'Varela Round';
-    src: url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap') format('truetype');
+    font-family: 'Lato';
+    src: url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -17,7 +17,7 @@ html, body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--white);
-    font-family: 'Varela Round';
+    font-family: 'Lato';
     min-height: 100vh;
 }
 
@@ -30,13 +30,16 @@ html, body {
 }
 
 header {
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
+    background-color: var(--white);
+    transition: all 0.2s ease-in-out;
 }
 
 main {
     background-color: var(--white);
     min-height: 100vh;
-    font-family: 'Varela Round';
+    font-family: 'Lato';
+    transition: all 0.2s ease-in-out;
 }
 
 .darkmode {
@@ -52,15 +55,20 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-left: 0;
-    margin-right: 0;
-    font-family: 'Varela Round';
-    font-weight: bold;
+    justify-content: space-around;
+    margin: 0;
+    font-family: 'Lato';
+    font-weight: normal;
+}
+
+.navbar .container-fluid {
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 h1.name {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 4rem;
     color: var(--navy);
     font-weight: bolder;
@@ -77,9 +85,15 @@ h4 {
     align-items: center;
     gap: 50px;
     margin-right: 2rem;
-    font-family: 'Varela Round';
+    font-family: 'Lato';
     font-size: 1.3rem !important;
     font-weight: bolder;
+}
+
+.nav-content:hover {
+    color: rgb(202, 202, 202) !important;
+    transform: scale(1.01);
+    transition: all 0.2s ease-in-out;
 }
 
 .navbar-collapse {
@@ -89,11 +103,14 @@ h4 {
     left: 0;
     right: 0;
     z-index: 200;
+    width: 100vw;
 }
 
 .collapse.show .navbar-nav {
     background-color: var(--navy);
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -141,9 +158,10 @@ h4 {
     max-width: 25rem;
     min-height: 25rem;
     object-fit: cover;
-    border-radius: 25rem;
+    border-radius: 0.5rem;
     background-color: rgb(190, 198, 211);
-    box-shadow: 20px 20px 0px 5px rgb(244, 248, 255);
+    box-shadow: 10px 10px 0px 2px rgb(244, 248, 255);
+    transition: all 0.2s ease-in-out;
 }
 
 @media (max-width: 800px) {
@@ -166,7 +184,7 @@ h4 {
 }
 
 .center {
-    text-align: right;
+    text-align: center;
 }
 
 /* Main container styles */
@@ -179,7 +197,6 @@ h4 {
     color: white;
     padding: 7rem 5rem;
     font-size: 1.2rem;
-    cursor: url('../images/cursor.png'), auto;
 }
 
 .image-container {
@@ -198,7 +215,7 @@ h4 {
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    bottom: 125%; /* Position above the image */
+    bottom: 125%;
     left: 50%;
     margin-left: -50px;
     opacity: 0;
@@ -208,7 +225,7 @@ h4 {
 .alt-text::after {
     content: '';
     position: absolute;
-    top: 100%; /* Arrow pointing down */
+    top: 100%;
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
@@ -231,6 +248,7 @@ h4 {
 .div2 {
     flex: 1;
     padding: 1rem;
+    cursor: url('../images/cursor.png'), auto;
 }
 
 /* Responsive design */
@@ -281,6 +299,7 @@ footer {
     padding: 1rem;
     padding-bottom: 2rem;
     padding-top: 2rem;
+    transition: all 0.2s ease-in-out;
 }
 
 footer h6 {
@@ -292,6 +311,14 @@ footer h6 {
     justify-content: center;
     gap: 10px;
     margin-top: 1rem;
+}
+
+.expand img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.expand img:hover {
+    transform: scale(1.03);
 }
 
 /* scrollbar */

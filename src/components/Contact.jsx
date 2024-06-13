@@ -1,6 +1,6 @@
 import code from '../images/code2.png'
 import emailjs from '@emailjs/browser'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 export default function Contact() {
     const MY_EMAIL = process.env.REACT_APP_MY_EMAIL;
@@ -66,9 +66,12 @@ export default function Contact() {
                 backgroundAttachment: 'fixed',
             }}
         >
-
             <div className="offset-3 col-6">
                 <h1 style={{fontWeight: 'bold', textAlign: 'center'}}>Contact</h1>
+                <div><br /></div>
+                <p style={{fontWeight: 'bold', textAlign: 'center'}}>
+                    I look forward to hearing from you!
+                </p>
                 <div><br /></div>
                 <br />
                 {userError && (

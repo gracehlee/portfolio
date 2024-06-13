@@ -15,42 +15,91 @@ function App() {
     setDarkMode(!darkmode)
     document.body.classList.toggle('dark-mode')
   }
+  const scroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <BrowserRouter>
-      <nav className="navbar navbar-expand-lg sticky-top">
-            <div className="container-fluid">
-                <button class="btn btn-dark rounded-pill" onClick={toggleDarkMode}>🔅</button>
-                <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse sticky-top" id="navbarNav">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <a className="nav-link nav-content" href="/">about</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link nav-content" href="/">projects</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link nav-content" href="/">contact</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link nav-content" href="/">resume</a>
-                        </li>
-                    </ul>
-                </div>
-
+      <header style={{backgroundColor: `${darkmode ? 'black' : ''}`}}>
+        <nav className="navbar navbar-expand-lg fixed-top">
+          <div className="container-fluid">
+              <button
+                class="btn btn-dark rounded-pill"
+                style={{backgroundColor: `${darkmode ? 'grey' : ''}`, marginLeft: '1rem'}}
+                onClick={toggleDarkMode}
+              > <span>  </span>
+                🔅
+              </button>
+              <button
+                  className="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                  style={{marginRight: '1rem'}}
+              >
+                  <span className="navbar-toggler-icon"></span>
+              </button>
+              <div className="collapse navbar-collapse sticky-top" id="navbarNav" style={{padding: '1rem'}}>
+                  <ul className="navbar-nav">
+                      <li className="nav-item">
+                        <span
+                            className="nav-link nav-content"
+                            onClick={() => scroll("home")}
+                            style={{ cursor: 'pointer' }}
+                          >
+                            Home
+                        </span>
+                      </li>
+                      <li className="nav-item">
+                        <span
+                          className="nav-link nav-content"
+                          onClick={() => scroll("about")}
+                          style={{ cursor: 'pointer' }}
+                        >
+                          About
+                        </span>
+                      </li>
+                      <li className="nav-item">
+                        <span
+                          className="nav-link nav-content"
+                          onClick={() => scroll("projects")}
+                          style={{ cursor: 'pointer' }}
+                        >
+                          Projects
+                        </span>
+                      </li>
+                      <li className="nav-item">
+                        <span
+                            className="nav-link nav-content"
+                            onClick={() => scroll("contact")}
+                            style={{ cursor: 'pointer' }}
+                          >
+                            Contact
+                          </span>
+                      </li>
+                      <li className="nav-item">
+                          <a
+                            className="nav-link nav-content"
+                            href="./resume/leegrace_resume.pdf"
+                            role="button"
+                            target="_blank"
+                          >
+                            {" "}
+                            Resume
+                          </a>
+                      </li>
+                  </ul>
+              </div>
             </div>
         </nav>
+      </header>
       <main>
         <div id="content">
           <Routes>
