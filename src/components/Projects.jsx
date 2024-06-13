@@ -100,7 +100,7 @@ export default function Projects(props) {
             liveLink: 'test',
             codeLink: 'https://gitlab.com/gracehlee/pb-art-site',
             title: 'PB Art Site',
-            description: 'An early project of an art portfolio web application that allows users to upload image files to their portfolio, follow other users to view their artwork in the home dashboard, and explore all artworks in the Explore tab. Users can also search artworks by the artist name, artwork title, and by any associated tags.',
+            description: 'An early Django-centric project of an art portfolio web application that allows users to upload image files to their portfolio, follow other users to view their artwork in the home dashboard, and explore all artworks in the Explore tab. Users can also search artworks by the artist name, artwork title, and by any associated tags.',
             tags: ['Python', 'Django', 'HTML', 'CSS', 'JavaScript', 'PowerShell']
         },
         {
