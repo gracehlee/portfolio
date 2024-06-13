@@ -1,7 +1,7 @@
 /* fonts */
 @font-face {
-    font-family: 'Varela Round';
-    src: url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap') format('truetype');
+    font-family: 'Lato';
+    src: url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -17,7 +17,7 @@ html, body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--white);
-    font-family: 'Varela Round';
+    font-family: 'Lato';
     min-height: 100vh;
 }
 
@@ -38,7 +38,7 @@ header {
 main {
     background-color: var(--white);
     min-height: 100vh;
-    font-family: 'Varela Round';
+    font-family: 'Lato';
     transition: all 0.2s ease-in-out;
 }
 
@@ -57,8 +57,8 @@ nav {
     align-items: center;
     justify-content: space-around;
     margin: 0;
-    font-family: 'Varela Round';
-    font-weight: bold;
+    font-family: 'Lato';
+    font-weight: normal;
 }
 
 .navbar .container-fluid {
@@ -68,7 +68,7 @@ nav {
 }
 
 h1.name {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 4rem;
     color: var(--navy);
     font-weight: bolder;
@@ -85,7 +85,7 @@ h4 {
     align-items: center;
     gap: 50px;
     margin-right: 2rem;
-    font-family: 'Varela Round';
+    font-family: 'Lato';
     font-size: 1.3rem !important;
     font-weight: bolder;
 }
@@ -184,7 +184,7 @@ h4 {
 }
 
 .center {
-    text-align: right;
+    text-align: center;
 }
 
 /* Main container styles */
