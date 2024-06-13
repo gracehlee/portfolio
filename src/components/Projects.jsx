@@ -66,7 +66,7 @@ export default function Projects(props) {
             codeLink: 'https://gitlab.com/gracehlee/portfolio',
             title: 'Portfolio Site',
             description: 'A portfolio website application showcasing my recent and significant projects. Code was built using the React.js framework, using HTML, CSS, and Bootstrap to set up the main front-end graphical user interface. Navigation will snap to the desired section using DOM manipulation. Contact form with email capabilities was built using third-party API, EmailJS. Site was deployed through Heroku.',
-            tags: ['React', 'Bootstrap', 'CSS', 'EmailJS', 'Heroku'],
+            tags: ['React', 'Bootstrap', 'DOM', 'CSS', 'EmailJS', 'Heroku'],
         },
         {
             video: 'IxjdZSEP9zI',
