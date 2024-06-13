@@ -1,12 +1,12 @@
-import profile from '../images/transparent.png';
-import '../css/index.css';
+import profile from '../images/profile.png'
+import profile2 from '../images/profile2.png'
+import '../css/index.css'
 import linkedin from '../images/linkedin.png'
 import gitlab from '../images/gitlab.png'
 import gmail from '../images/gmail.png'
 import linkedin2 from '../images/linkedin2.png'
 import gitlab2 from '../images/gitlab2.png'
 import gmail2 from '../images/gmail2.png'
-import bw from '../images/bw.png'
 import lattice from '../images/lattice.gif'
 
 export default function Intro(props) {
@@ -80,10 +80,11 @@ export default function Intro(props) {
                     </div>
                     <div className="profile-image align-items-center position-relative">
                         <img
-                            src={darkmode ? bw : profile}
+                            src={darkmode ? profile2 : profile}
                             style={{
                                 backgroundColor: `${darkmode ? '#111111' : ''}`,
-                                boxShadow: '20px 20px 0px 5px'
+                                boxShadow: '20px 20px 0px 5px',
+                                transition: 'all 0.5s ease-in-out',
                             }}
                             alt="Profile"
                         />

@@ -1,6 +1,6 @@
 import code from '../images/code2.png'
 import emailjs from '@emailjs/browser'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 export default function Contact() {
     const MY_EMAIL = process.env.REACT_APP_MY_EMAIL;
