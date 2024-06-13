@@ -14,25 +14,21 @@ export default function Projects(props) {
             fontSize: '0.8rem',
         };
 
-        const mediaStyle = {
-            objectFit: 'fit',
-            aspectRatio: '1.5 / 1',
-            borderRadius: '0',
-            width: '100%',
-        }
-
         return (
             <div
                 className="card mb-4"
                 style={{
                     border: darkmode ? '1px solid white' : '1px solid',
-                    borderRadius: '2px',
                     backgroundColor: darkmode ? '#111000' : 'white',
                     color: darkmode ? 'white' : 'black',
+                    objectFit: 'fit',
+                    aspectRatio: '1.5 / 1',
+                    borderRadius: '0',
+                    width: '100%',
                 }}
             >
                 <div style={{ margin: '10px' }}>
-                        <YouTube videoId={project.videoId} opts={{ width: '100%', height: 'auto' }} />
+                        <YouTube videoId={video} opts={{ width: '100%', height: 'auto' }} />
                     </div>
                 <div className="card-body">
                     <div className="d-flex justify-content-between mb-3 align-items-center">
@@ -56,7 +52,7 @@ export default function Projects(props) {
 
     const topThree = [
         {
-            video: portfolio,
+            video: '',
             liveLink: 'test',
             codeLink: 'https://gitlab.com/gracehlee/portfolio',
             title: 'Portfolio Site',
@@ -64,7 +60,7 @@ export default function Projects(props) {
             tags: ['React', 'Bootstrap', 'CSS'],
         },
         {
-            video: pawsitivevibes,
+            video: '',
             liveLink: 'test',
             codeLink: 'https://gitlab.com/gracehlee/pawsitive-vibes',
             title: 'Pawsitive Vibes',
@@ -72,7 +68,7 @@ export default function Projects(props) {
             tags: ['React', 'RestAPIs', 'ViteJS', 'FastAPI', 'Postgresql', 'Bootstrap', 'CSS', 'HTML', 'Docker', 'JavaScript']
         },
         {
-            video: carcar,
+            video: '',
             liveLink: 'test',
             codeLink: 'https://gitlab.com/gracehlee/project-beta',
             title: 'CarCar',
@@ -83,7 +79,7 @@ export default function Projects(props) {
 
     const myProjects = [
         {
-            video: portfolio,
+            video: '',
             liveLink: 'test',
             codeLink: 'https://gitlab.com/gracehlee',
             title: 'Test Project',
@@ -91,7 +87,7 @@ export default function Projects(props) {
             tags: ['React', 'Bootstrap', 'CSS']
         },
         {
-            video: portfolio,
+            video: '',
             liveLink: 'test',
             codeLink: 'https://gitlab.com/gracehlee',
             title: 'Test Project',
@@ -99,7 +95,7 @@ export default function Projects(props) {
             tags: ['React', 'Bootstrap', 'CSS']
         },
         {
-            video: portfolio,
+            video: '',
             liveLink: 'test',
             codeLink: 'https://gitlab.com/gracehlee',
             title: 'Test Project',
