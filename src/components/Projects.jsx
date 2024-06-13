@@ -61,12 +61,12 @@ export default function Projects(props) {
 
     const topThree = [
         {
-            video: 'AvjIVyriSso',
+            video: 'Ry5ksXVhagw',
             liveLink: 'test',
             codeLink: 'https://gitlab.com/gracehlee/portfolio',
             title: 'Portfolio Site',
             description: 'A portfolio website application showcasing my recent and significant projects. Code was built using the React.js framework, using HTML, CSS, and Bootstrap to set up the main front-end graphical user interface. Navigation will snap to the desired section using DOM manipulation. Contact form with email capabilities was built using third-party API, EmailJS. Site was deployed through Heroku.',
-            tags: ['React', 'Bootstrap', 'CSS', 'EmailJS', 'Heroku'],
+            tags: ['React', 'Bootstrap', 'DOM', 'CSS', 'EmailJS', 'Heroku'],
         },
         {
             video: 'IxjdZSEP9zI',
@@ -92,24 +92,24 @@ export default function Projects(props) {
             liveLink: 'test',
             codeLink: 'https://gitlab.com/gracehlee/fearless-frontend',
             title: 'Conference GO',
-            description: 'A full-stack web application that allows users to keep track of conferences, events, and attendees. Consists of a dynamic front-end interface with React, JavaScript, and Bootstrap design elements, back-end infrastructure using Django and Python, ensuring robustness and scalability, and third-party APIs with Pexels and Weather updates.',
-            tags: ['React', 'Bootstrap', 'CSS']
+            description: 'A full-stack web application that allows users to keep track of conferences, events, and attendees: dynamic front-end with React, JavaScript, and Bootstrap, back-end infrastructure using Django and Python, ensuring robustness and scalability, and third-party APIs with Pexels and Weather updates.',
+            tags: ['React', 'JavaScript', 'Django', 'Python', 'JSX', 'Bootstrap', 'CSS', 'HTML', 'REST API']
         },
         {
-            video: '',
+            video: 'i6nX5Bb1AIU',
             liveLink: 'test',
-            codeLink: 'https://gitlab.com/gracehlee',
-            title: 'Test Project',
-            description: 'Test test test. This is where my description goes. As a detail-oriented and enthusiastic thinker, I thrive on learning new concepts, engaging in critical analysis, and solving complex problems. Each project presents its own set of challenges, but I find immense satisfaction in overcoming them through perseverance and thorough research.',
-            tags: ['React', 'Bootstrap', 'CSS']
+            codeLink: 'https://gitlab.com/gracehlee/pb-art-site',
+            title: 'PB Art Site',
+            description: 'An early Django-centric project of an art portfolio web application that allows users to upload image files to their portfolio, follow other users to view their artwork in the home dashboard, and explore all artworks in the Explore tab. Users can also search artworks by the artist name, artwork title, and by any associated tags.',
+            tags: ['Python', 'Django', 'HTML', 'CSS', 'SQLite3', 'PowerShell']
         },
         {
-            video: '',
+            video: 'cSZKaBTFBj4',
             liveLink: 'test',
-            codeLink: 'https://gitlab.com/gracehlee',
-            title: 'Test Project',
-            description: 'Test test test. This is where my description goes. As a detail-oriented and enthusiastic thinker, I thrive on learning new concepts, engaging in critical analysis, and solving complex problems. Each project presents its own set of challenges, but I find immense satisfaction in overcoming them through perseverance and thorough research.',
-            tags: ['React', 'Bootstrap', 'CSS']
+            codeLink: 'https://gitlab.com/gracehlee/cute-cats',
+            title: 'Cute Cats',
+            description: 'An early Django-centric project of a 2000`s aesthetic website featuring popular meme cats. Users are able to log in, submit a form to add a new cat, and click on individual cats to view or edit information. Instances of cats are managed by SQLite3 database. Frontend business logic requires login to view locked content. My first website!',
+            tags: ['Python', 'Django', 'CSS', 'HTML', 'SQLite3', 'Powershell']
         },
     ];
 
