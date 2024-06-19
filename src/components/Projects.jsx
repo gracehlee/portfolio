@@ -34,6 +34,7 @@ export default function Projects(props) {
                     <iframe
                         style={mediaStyle}
                         src={`https://www.youtube.com/embed/${video}`}
+                        title={title}
                         frameBorder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
