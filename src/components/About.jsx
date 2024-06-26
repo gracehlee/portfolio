@@ -16,6 +16,7 @@ import git from '../images/git.png'
 import cicd from '../images/cicd.png'
 import aws from '../images/aws.png'
 import heroku from '../images/heroku.png'
+import exjs from '../images/exjs.png'
 
 export default function About() {
     return (
@@ -100,6 +101,10 @@ export default function About() {
                 <div className="image-container">
                     <img src={postgresql} alt="postgresql" width='30px'/>
                     <span className="alt-text">PostgreSQL</span>
+                </div>
+                <div className="image-container">
+                    <img src={exjs} alt="exjs" width='30px'/>
+                    <span className="alt-text">ExpressJS</span>
                 </div>
                 <div><br /></div>
                 <p style={{color: 'lightblue'}}>Frontend</p>
