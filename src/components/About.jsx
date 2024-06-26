@@ -17,6 +17,7 @@ import cicd from '../images/cicd.png'
 import aws from '../images/aws.png'
 import heroku from '../images/heroku.png'
 import exjs from '../images/exjs.png'
+import mdb from '../images/mdb.png'
 
 export default function About() {
     return (
@@ -101,6 +102,10 @@ export default function About() {
                 <div className="image-container">
                     <img src={postgresql} alt="postgresql" width='30px'/>
                     <span className="alt-text">PostgreSQL</span>
+                </div>
+                <div className="image-container">
+                    <img src={mdb} alt="mdb" width='30px'/>
+                    <span className="alt-text">MongoDB</span>
                 </div>
                 <div className="image-container">
                     <img src={exjs} alt="exjs" width='30px'/>
